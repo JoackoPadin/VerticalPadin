@@ -1,8 +1,10 @@
 import './App.css';
+import Header from "./componentes/Header"
+
 
 function App() {
   return (
-    <p>Hola VERTICAL!!!</p>
+   <Header />
   );
 }
 
