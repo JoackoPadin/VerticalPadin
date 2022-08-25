@@ -1,10 +1,10 @@
 import React from "react";
-import App from "../App";
+import Navbar from "./Navbar";
 
 const Header = () => {
     return (
         <div>
-            <p>HOLA VERTICAL</p>
+        <Navbar />
         </div>
     );
 }
