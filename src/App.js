@@ -7,7 +7,7 @@ function App() {
   return (
    <div className='contair'>
       <Header />
-      <ItemListContainer />
+      <ItemListContainer texto="VENTA DE LOTES" />
    </div>
   );
 }
