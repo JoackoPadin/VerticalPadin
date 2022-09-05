@@ -1,16 +1,20 @@
 import React from "react";
-import CartWidget from "./CartWidget";
-import logosmall from "./Imagenes/logosmall.jpg"
+import CartWidget from "../CartWidget/CartWidget";
+import logosmall from "../Imagenes/logosmall.jpg";
+import "./NavBar.css";
 
 const Navbar = () =>{
     return(
-        <nav className="navbar navbar-expand-lg bg-light">
-        <div className="container-fluid">
-          <img src={logosmall} width="48" height="48" alt="Vertical" />
-          <a className="navbar-brand" href="#">Vertical</a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
+      <div className="fondo-navbar">
+        <nav className="navbar navbar-expand-lg  container-fluid">
+          <div className="container-fluid ">
+            <div className="px-3">
+              <img src={logosmall} width="55" height="55" alt="Vertical" />
+            </div>
+              <a className="navbar-brand color-letra" href="#">Vertical</a>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span className="navbar-toggler-icon"></span>
+                </button>
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
@@ -34,7 +38,7 @@ const Navbar = () =>{
         </div>
         <CartWidget/>
       </nav>
-
+    </div>
     );
 }
 
