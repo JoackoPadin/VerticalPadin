@@ -18,7 +18,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
         }
     }
     const agregarProducto = () =>{
-        if (itemStock > 0 ) {
+        if (cantidad <= itemStock) {
         setItemStock (itemStock - cantidad);
         setItemAdd(itemAdd + cantidad);    
         }
