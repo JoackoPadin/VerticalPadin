@@ -8,8 +8,8 @@ function App() {
   return (
    <div className=' fondo-marron'>
     <Header/>
+      <ItemListContainer />
       <ItemCount stock={5} initial={1} onAdd={0} />
-      <ItemListContainer texto="VENTA DE LOTES" />
    </div>
   );
 }
