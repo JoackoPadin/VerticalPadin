@@ -6,14 +6,14 @@ import { productos } from '../Productos/Productos';
 
 
 const ItemCategoria = () => {
-  const [items, setItems] = useState({})
+  const [items, setItems] = useState([])
 
 
 const {categoria} = useParams()
 
   useEffect(()=>{
     
-    const getProducto = (categoria) =>
+    const getProducto = () =>
       new Promise((resolve, reject) => {
        const producto = productos.filter((prod)=> prod.categoria === categoria);
         setTimeout(()=>{
@@ -28,7 +28,7 @@ const {categoria} = useParams()
       .catch((error)=>{
         console.log(error)
       })
-    }, [categoria])
+    }, [])
     
   return (
     <div>
