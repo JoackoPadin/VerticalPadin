@@ -1,12 +1,11 @@
 import React from 'react'
 import ItemCount from '../ItemCount/ItemCount';
 
+
 const ItemDetail = ({item}) => {
   return (
     <div >
-      <link>
       <img src={item.imagen} alt={item.loteo} />
-      </link>
       <div>
         <h2>{item.loteo}</h2>
         <p>{item.descripcion}</p>

@@ -16,7 +16,6 @@ const {categoria} = useParams()
     const getProducto = (categoria) =>
       new Promise((resolve, reject) => {
        const producto = productos.filter((prod)=> prod.categoria === categoria);
-       console.log(producto)
         setTimeout(()=>{
          resolve(producto) 
         },500);
