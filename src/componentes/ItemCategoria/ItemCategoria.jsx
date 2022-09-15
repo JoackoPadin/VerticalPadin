@@ -1,38 +1,41 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import ItemDetail from '../ItemDetail/ItemDetail';
+import ItemList from '../ItemList/ItemList';
 import { productos } from '../Productos/Productos';
 
-const ItemDetailContainer = () => {
-  const [item, setItems] = useState({})
+
+const ItemCategoria = () => {
+  const [items, setItems] = useState({})
 
 
-const {id} = useParams()
+const {categoria} = useParams()
 
   useEffect(()=>{
-    const getProducto = (id) =>
+    
+    const getProducto = (categoria) =>
       new Promise((resolve, reject) => {
-       const producto = productos.find((prod)=> prod.id === id)
+       const producto = productos.filter((prod)=> prod.categoria === categoria);
+       console.log(producto)
         setTimeout(()=>{
          resolve(producto) 
         },500);
       });
 
-      getProducto(parseInt(id))
+      getProducto()
       .then((data)=>{
         setItems(data)
       })
       .catch((error)=>{
         console.log(error)
       })
-    }, [])
+    }, [categoria])
     
   return (
     <div>
-      <ItemDetail item={item} />
+       <ItemList items={items} />
     </div>
   )
 }
 
-export default ItemDetailContainer;
+export default ItemCategoria;

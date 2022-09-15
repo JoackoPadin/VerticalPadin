@@ -30,8 +30,10 @@ const Navbar = () =>{
                 </a>
                 <ul className="dropdown-menu">
                   <li><a className="dropdown-item" href="#">Dalmacio Velez Sarfield</a></li>
-                  <li><a className="dropdown-item" href="#">Las Palmas</a></li>
-                  <li><a className="dropdown-item" href="#">Barrio Sur</a></li>
+                  <li><a className="dropdown-item" href="#">Chañares del Sur</a></li>
+                  <li><a className="dropdown-item" href="#">Solar de Velez</a></li>
+                  <li><a className="dropdown-item" href="#">Aires Del Sur</a></li>
+                  <li><a className="dropdown-item" href="#">Entorno de Bosque</a></li>
                 </ul>
               </li>
             </ul>
