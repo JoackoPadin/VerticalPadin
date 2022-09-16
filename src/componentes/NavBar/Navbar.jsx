@@ -4,7 +4,8 @@ import logosmall from "../Imagenes/logosmall.jpg";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
 
-const Navbar = () =>{
+
+const Navbar = ({categoria}) =>{
     return(
       <div className="fondo-navbar">
         <nav className="navbar navbar-expand-lg  container-fluid">
@@ -29,11 +30,11 @@ const Navbar = () =>{
                   Desarrollos
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Dalmacio Velez Sarfield</a></li>
-                  <li><a className="dropdown-item" href="#">Chañares del Sur</a></li>
-                  <li><a className="dropdown-item" href="#">Solar de Velez</a></li>
-                  <li><a className="dropdown-item" href="#">Aires Del Sur</a></li>
-                  <li><a className="dropdown-item" href="#">Entorno de Bosque</a></li>
+                  <li><Link to={`/categoria/Dalmacio Velez`} className="dropdown-item">Dalmacio Velez</Link></li>
+                  <li><Link to={`/categoria/Chañares del Sur`} className="dropdown-item">Chañares del Sur</Link></li>
+                  <li><Link to={`/categoria/Solar de Velez`} className="dropdown-item">Solar de Velez</Link></li>
+                  <li><Link to={`/categoria/Aires Del Sur`} className="dropdown-item">Aires Del Sur</Link></li>
+                  <li><Link to={`/categoria/Entorno de Bosque`} className="dropdown-item">Entorno de Bosque</Link></li>
                 </ul>
               </li>
             </ul>
