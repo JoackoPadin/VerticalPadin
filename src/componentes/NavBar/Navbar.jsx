@@ -13,7 +13,7 @@ const Navbar = ({categoria}) =>{
             <div className="px-3">
               <img src={logosmall} width="55" height="55" alt="Vertical" />
             </div>
-              <a className="navbar-brand color-letra" href="#">Vertical</a>
+              <Link to={`/`} className="navbar-brand color-letra">Vertical</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
                 </button>
@@ -23,7 +23,7 @@ const Navbar = ({categoria}) =>{
                 <a className="nav-link active" aria-current="page" href="#">Inversiones</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Nosotros</a>
+                <Link to={`/`} className="nav-link">Nosotros</Link>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
