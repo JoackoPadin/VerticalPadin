@@ -29,7 +29,7 @@ const Navbar = ({categoria}) =>{
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Desarrollos
                 </a>
-                <ul className="dropdown-menu">
+                <ul className="dropdown-menu fondo-navbar">
                   <li><Link to={`/categoria/Dalmacio Velez`} className="dropdown-item">Dalmacio Velez</Link></li>
                   <li><Link to={`/categoria/Chañares del Sur`} className="dropdown-item">Chañares del Sur</Link></li>
                   <li><Link to={`/categoria/Solar de Velez`} className="dropdown-item">Solar de Velez</Link></li>

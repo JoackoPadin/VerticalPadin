@@ -3,21 +3,26 @@ import Header from './componentes/Header/Header';
 import ItemCategoria from './componentes/ItemCategoria/ItemCategoria';
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
-import {Routes, Route} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Footer from './componentes/Footer/Footer';
+import Provider from "./componentes/Contexto/Context";
+import Cart from "./componentes/Cart/Cart";
 
 
 
 function App() {
   return (
    <div className=' fondo-marron'>
-    <Header/>
-      <Routes>
-        <Route path='/' element={<ItemListContainer/>} />
-        <Route path='/loteos/:id' element={<ItemDetailContainer/>} />
-        <Route path='/categoria/:categoria' element={<ItemCategoria/>} />
-      </Routes>
+   <Provider>
+      <Header/>
+        <Routes>
+          <Route path={'/'} element={<ItemListContainer/>} />
+          <Route path='/loteos/:id' element={<ItemDetailContainer/>} />
+          <Route path='/categoria/:categoria' element={<ItemCategoria/>} />
+          <Route path='/cart' element= {<Cart />} />
+        </Routes>
       <Footer />
+    </Provider>
    </div>
   );
 }
