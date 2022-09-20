@@ -31,8 +31,7 @@ const ItemCount = ({ initial, stock, onAdd}) => {
 
     return(
     <div className="container py-5">
-        [ NOMBRE DEL LOTEO ]
-        <div className="row">
+        <div className="container row">
             <div className="col-md-2 ">
                 <div className="input-group">
                     <input type="button" className="btn btn-secondary" value="-" onClick={()=>
