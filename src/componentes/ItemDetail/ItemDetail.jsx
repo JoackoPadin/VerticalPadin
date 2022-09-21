@@ -15,20 +15,18 @@ const ItemDetail = ({item}) => {
   }
 
   return (
-    <div className='container contenedor text-center' >
+    <div className='container-sm contenedor text-center ' >
       <div className='row'>
         <div className='col'>
-          <img src={item.imagen} alt={item.loteo} className='img-fluid' />
-          <div className='container contenedorCard'>
+          <img src={item.imagen} alt={item.loteo} className='img-fluid img' />
+          <div className='contenedorCard'>
             <h2>{item.loteo}</h2>
             <p>{item.descripcion}</p>
             <h3>${item.precio}.-</h3>
-            {counter === 0 ? <ItemCount initial={1} stock={item.stock} onAdd={onAdd} /> : <Link to={"/cart"} className="btn">Ir al Carrito</Link>}
+            {counter === 0 ? <ItemCount initial={1} stock={item.stock} onAdd={onAdd} /> : <Link to={"/cart"} className="btn botonCarrito">Ir al Carrito</Link>}
           </div> 
         </div>
-        
-      </div>
-        
+      </div>  
     </div>
     
   )

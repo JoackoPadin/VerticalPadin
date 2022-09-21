@@ -6,7 +6,7 @@ const Item = ({id, loteo, descripcion, numeroDeLote, imagen, precio}) => {
   return (
         <div className="card item">
             <Link to={`/loteos/${id}`} >
-              <img src={imagen} className="card-img-top" alt={loteo} />
+              <img src={imagen} className="card-img-top img-fluid img" alt={loteo} />
             </Link>
             <div className="card-body">
                 <h5 className="card-title text-center"><b>{loteo}</b></h5>

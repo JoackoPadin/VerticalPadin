@@ -1,9 +1,13 @@
 .fondo-navbar{
-    background-color: #7a3439;
+    background-color:  #004e92;    
 }
 .color-letra{
     color: #000000;
 }
 .letras{
     font-weight: bold;
+}
+.Vert {
+    font-style: italic;
+    margin-top: 15px;
 }

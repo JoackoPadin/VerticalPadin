@@ -12,7 +12,7 @@ import Cart from "./componentes/Cart/Cart";
 
 function App() {
   return (
-   <div className=' fondo-marron'>
+   <div className=' fondo-marron fuente'>
    <Provider>
       <Header/>
         <Routes>

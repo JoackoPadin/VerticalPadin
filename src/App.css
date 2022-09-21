@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .fondo-marron{
-    background-color: #c09f80;
+    
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+}
+
+.fuente {
+    font-family: 'Poppins', sans-serif;
 }

@@ -1,7 +1,19 @@
 .contenedor{
     padding-top: 25px;
-    border: 15px;
+    font-style: italic;
 }
 .contenedorCard{
-    background-color:
+    border-style: solid;
+    width: 800px;
+    margin: auto;
+}
+.img {
+    padding-bottom: 20px;
+    width: 500px;
+}
+
+.botonCarrito {
+    border: solid;
+    margin-bottom: 15px;
+    background-color: #f4decb;
 }
