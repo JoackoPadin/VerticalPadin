@@ -4,11 +4,11 @@
     padding-right: 55px;
     
 }
-.botones {
+.botonesCart {
     border: solid;
     width: 45px;
     align-items: center;
-    background-color: #f4decb;
+    background-color: grey;
     margin: 0%;
     padding: 0%;
 }

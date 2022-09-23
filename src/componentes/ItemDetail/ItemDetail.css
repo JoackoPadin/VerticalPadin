@@ -1,11 +1,13 @@
 .contenedor{
     padding-top: 25px;
     font-style: italic;
+    color: antiquewhite;
 }
 .contenedorCard{
     border-style: solid;
-    width: 800px;
     margin: auto;
+    background: linear-gradient(to right, #4B79A1, #283E51); 
+    max-width: 600px; 
 }
 .img {
     padding-bottom: 20px;
@@ -13,7 +15,13 @@
 }
 
 .botonCarrito {
-    border: solid;
+    background-color: #043a69;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    box-shadow: 5px 5px rgba(0,0,0,0.5);
     margin-bottom: 15px;
-    background-color: #f4decb;
+    color: white;
+    border-color: white;
 }

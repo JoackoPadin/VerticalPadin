@@ -20,11 +20,11 @@ const ItemDetail = ({item}) => {
         <div className='col'>
           <img src={item.imagen} alt={item.loteo} className='img-fluid img' />
           <div className='contenedorCard'>
-            <h2>{item.loteo}</h2>
+            <h3>{item.loteo}</h3>
             <p>{item.descripcion}</p>
-            <h3>${item.precio}.-</h3>
+            <h4>${item.precio}.-</h4>
             {counter === 0 ? <ItemCount initial={1} stock={item.stock} onAdd={onAdd} /> : <Link to={"/cart"} className="btn botonCarrito">Ir al Carrito</Link>}
-          </div> 
+          </div>
         </div>
       </div>  
     </div>

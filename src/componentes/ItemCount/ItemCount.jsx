@@ -1,10 +1,10 @@
 import React, { useState, useEffect  } from "react";
-import { cartContext } from "../Contexto/Context";
+import "./ItemCount.css";
 
 const ItemCount = ({ initial, stock, onAdd}) => {
     const [counter, setCounter] = useState(initial);
     const [itemStock, setItemStock]= useState(stock);
-    //const [cantidad, setCantidad]= useState(initial);
+    
 
     const decrementarCantidad = (valor) => {
         if (valor > 0) {
@@ -22,7 +22,7 @@ const ItemCount = ({ initial, stock, onAdd}) => {
             onAdd(counter);
         setItemStock (itemStock - counter);
         setCounter(itemStock - counter);
-        //setItemAdd(itemAdd + cantidad);    
+           
         }
         
     }
@@ -30,24 +30,23 @@ const ItemCount = ({ initial, stock, onAdd}) => {
     }, [stock]);
 
     return(
-    <div className="container py-5">
-        <div className="container row">
-            <div className="col-md-2 ">
-                <div className="input-group">
-                    <input type="button" className="btn btn-secondary" value="-" onClick={()=>
+        <div className="container py-5">
+        <div className="row d-flex justify-content-center">
+            <div className="col-md-3 ">
+                <div className="input-group ">
+                    <input type="button" className="btn btn-secondary botones" value="-" onClick={()=>
                         {decrementarCantidad(counter - 1)}} /> 
                     <input type="text" className="form-control" value={counter} onChange={()=>{}} />
-                    <input type="button" className="btn btn-secondary" value="+" onClick={()=>
+                    <input type="button" className="btn btn-secondary botones" value="+" onClick={()=>
                         {incrementarCantidad(counter + 1)}} />
                 </div>
-                <div className="d-grid gap-2 py-2">
-                    <input type="button" className="btn btn-secondary" value="Agrega tu lote" onClick={ ()=>
+                <div className="d-grid gap-2 py-2 d-flex justify-content-center align-items-center">
+                    <input type="button" className="btn botonAgregaLote" value="Agrega tu lote" onClick={ ()=>
                     {agregarProducto()}} />
                 </div>
             </div>
         </div>         
     </div>
-   
     );
 }
 
