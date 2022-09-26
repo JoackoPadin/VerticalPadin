@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 
 const Navbar = ({categoria}) =>{
+
     return(
       <div className="fondo-navbar">
         <nav className="navbar navbar-expand-lg  container-fluid">

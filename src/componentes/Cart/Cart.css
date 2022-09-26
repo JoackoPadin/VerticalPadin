@@ -1,0 +1,18 @@
+.btnCart {
+    background-color: #586e26;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    box-shadow: 5px 5px rgba(0,0,0,0.5);
+    color: white;
+    border-color: white;
+}
+.sinProductos {
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+.contPadre{
+    height: 80vh;
+}

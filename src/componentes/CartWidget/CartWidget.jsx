@@ -14,20 +14,16 @@ const CartWidget = () => {
             <div className="row ">
 
                 <div className="col-6 colum">
+                    {cartTotal() !== 0 ?
                 <Link to= {"/cart"}>
                     <button type="button" className="btn position-relative botonesCart me-1" title="Ir al Carrito" >
                         <img className="icono img-fluid" src={Cart} alt="Carrito"/>
                     </button>  
                     <span className=" translate-middle badge rounded-pill bg-danger">{cartTotal()}</span>    
                 </Link>
+                :""}
                 </div>
 
-                <div className="col-6 colum">
-                    <button type="button" className="btn position-relative me-1 botonesCart " title="vaciar carrito"
-                        onClick={()=> {clear()}}>
-                        <img className="icono img-fluid" src={Trash} alt="Cesto"/>
-                    </button>
-                </div>
           </div>      
         </div>
     );
