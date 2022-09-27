@@ -40,6 +40,7 @@ const Cart = () => {
           </div>
         </div>
       ))}
+        <hr className='hrt'/>
         <div className='d-flex row m-5'>
           <div className='col-3'>
             <button onClick={ clear } className='btnCart'>Eliminar Todo</button>
