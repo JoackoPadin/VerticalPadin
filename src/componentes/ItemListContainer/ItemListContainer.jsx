@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import ItemList from "../ItemList/ItemList";
 //import { productos } from '../Productos/Productos';
 import Loading from '../Loading/Loading';
-import { getFirestore, collection, getDoc, query, where} from "firebase/firestore";
+import { getFirestore, collection, getDocs, query, where} from "firebase/firestore";
 import { useParams } from "react-router-dom";
 
 
@@ -31,7 +31,7 @@ const ItemListContainer = () =>{
     const db = getFirestore();
     const itemColeccion = collection(db, "Productos");
     const queryItems = id ? query(itemColeccion, where("categoria", "==", id)) : itemColeccion;
-    getDoc(queryItems).then ((snapShot) => {
+    getDocs(queryItems).then ((snapShot) => {
         if (snapShot.size > 0) {
             setItems (snapShot.docs.map(item => ({id:item.id, ...item.data()})));
             setLoading(false);   
