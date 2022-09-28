@@ -13,7 +13,7 @@ const {categoria} = useParams()
 
   useEffect(()=>{
     
-    const getProducto = () =>
+   const getProducto = () =>
       new Promise((resolve, reject) => {
        const producto = productos.filter((prod)=> prod.categoria === categoria);
         setTimeout(()=>{

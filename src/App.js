@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './componentes/Header/Header';
-import ItemCategoria from './componentes/ItemCategoria/ItemCategoria';
+
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer';
 import ItemListContainer from './componentes/ItemListContainer/ItemListContainer';
 import { Routes, Route } from "react-router-dom";
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path={'/'} element={<ItemListContainer/>} />
           <Route path='/loteos/:id' element={<ItemDetailContainer/>} />
-          <Route path='/categoria/:categoria' element={<ItemCategoria/>} />
+          <Route path={"/categoria/:id"} element={<ItemListContainer />} />
           <Route path='/cart' element= {<Cart />} />
         </Routes>
       <Footer />
