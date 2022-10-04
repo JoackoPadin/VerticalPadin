@@ -11,6 +11,7 @@ const ItemDetailContainer = () => {
   const {id} = useParams();
 
   useEffect(()=>{
+    //PARA MOSTRAR LOS PRODUCTOS DESDE UN MOCK//
     /*const getProducto = (id) =>
       new Promise((resolve, reject) => {
        const producto = productos.find((prod)=> prod.id === id)

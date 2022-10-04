@@ -10,7 +10,7 @@ const Footer = () => {
     <div className='container footer'>
       <div>
         <hr></hr>
-        <h5>© 2020 Copyrigh JPS-DEVS</h5>
+        <h5>© 2022 Copyrigh JPS-DEVS</h5>
       </div>
       <div className='container text-end'>
         <div className='row'>

@@ -1,9 +1,16 @@
 .item {
     background-color: #da4e32;
-    
     color: aliceblue;
+    padding-bottom: 15px;
 }
 .img {
     width: 400px;
-    height: 400px;
+    height: auto;
+    margin-top: 10px;
+}
+.card-body{
+    margin: auto;
+}
+.precio{
+    margin: auto;
 }

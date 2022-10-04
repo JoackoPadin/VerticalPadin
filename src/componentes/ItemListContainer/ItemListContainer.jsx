@@ -13,7 +13,7 @@ const ItemListContainer = () =>{
     const [loading, setLoading] = useState(true)
     
     useEffect (()=> {
-    
+    //PARA MOSTRAR LOS PRODUCTOS DESDE UN MOCK//
    /*  const getProductos = new Promise((resolve)=>{
        /* setTimeout(()=> {
             resolve(productos);

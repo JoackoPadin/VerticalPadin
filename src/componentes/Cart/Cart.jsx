@@ -40,13 +40,19 @@ const Cart = () => {
           </div>
         </div>
       ))}
+        <h4>TOTAL  ${montoTotal()}.-</h4>
         <hr className='hrt'/>
-        <div className='d-flex row m-5'>
+        <div className=' container d-flex row m-5'>
           <div className='col-3'>
+            <Link to={'/Checkout'} title="Finalizar Compra">
+              <button className='btn btnCart'>Finalizar Compra</button>
+            </Link>
+          </div>
+          <div>
             <button onClick={ clear } className='btnCart'>Eliminar Todo</button>
           </div>
           <div className='col-3'>
-            <h4>TOTAL  ${montoTotal()}.-</h4>
+            
           </div>
         </div>
       </div>

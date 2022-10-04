@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import ItemList from '../ItemList/ItemList';
 import { productos } from '../Productos/Productos';
 
-
+//COMPONENTE SIN USO PORQUE SE CARGAN LAS CATEGORIAS DESDE ITEMDETAILCONTAINER//
 const ItemCategoria = () => {
   const [items, setItems] = useState([])
 
