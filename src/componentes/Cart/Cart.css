@@ -1,5 +1,16 @@
 .btnCart {
-    background-color: #586e26;
+    background-color: #4c4c4c;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    box-shadow: 5px 5px rgba(0,0,0,0.5);
+    color: white;
+    border-color: white;
+    position: relative;
+}
+.btnCart2{
+    background-color: #a53131;
     margin-top: 10px;
     font-size: 1.2rem;
     border-radius: 50px;
@@ -7,6 +18,7 @@
     box-shadow: 5px 5px rgba(0,0,0,0.5);
     color: white;
     border-color: white;
+    align-items: flex-end; 
 }
 .sinProductos {
     height: 80vh;
@@ -15,7 +27,28 @@
 }
 .contPadre{
     height: 80vh;
+    color: white;
 }
 .hrt{
     height: 30px;
+}
+.montoTotal{
+ text-align: end;
+ margin-right: 320px;
+}
+.EliminarDiv{
+    text-align: end;
+    margin-right: 80px;
+}
+.finalCompra{
+    text-align: center;
+    margin: auto;
+  
+}
+.marco{
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 20px;
+    
 }

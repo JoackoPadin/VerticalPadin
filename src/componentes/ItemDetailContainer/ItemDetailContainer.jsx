@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
-import ItemDetail from '../ItemDetail/ItemDetail';
+//import ItemDetail from '../ItemDetail/ItemDetail';
+import ItemDetail2 from '../ItemDetail/ItemDetail2';
 import Loading from '../Loading/Loading';
 //import { productos } from '../Productos/Productos';
 import { getFirestore, doc, getDoc } from "firebase/firestore"; 
@@ -40,7 +41,7 @@ const ItemDetailContainer = () => {
     
   return (
     <div>
-      {loading ? <Loading /> : <ItemDetail item={item} /> }
+      {loading ? <Loading /> : <ItemDetail2 item={item} /> }
     </div>
   )
 }

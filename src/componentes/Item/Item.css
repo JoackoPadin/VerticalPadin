@@ -1,12 +1,18 @@
 .item {
-    background-color: #da4e32;
-    color: aliceblue;
+    border-radius: 20px;
+    background-color: #C5D5E4;
+    color: black;
     padding-bottom: 15px;
+    box-shadow: 0px 15px 25px -6px black;
+    
+    
 }
 .img {
     width: 400px;
     height: auto;
     margin-top: 10px;
+    border-radius: 20px;
+    
 }
 .card-body{
     margin: auto;

@@ -28,23 +28,23 @@ const Checkout = () => {
     }
 
   return (
-    <div className="container py-5">
+    <div className="container-fluid py-5 contPadre">
             {cartTotal() > 0 ?
-            <div className="row">
+            <div className="row compra">
                 <div className="col-md-4 offset-md-2">
                         <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="nombre" onInput={(e) => setNombre(e.target.value)} />
+                            <label for="nombre" className="form-label">Nombre</label>
+                            <input type="text" className="form-control" id="nombre" onInput={(e) => setNombre(e.target.value)} />
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="text" class="form-control" id="email" onInput={(e) => setEmail(e.target.value)} />
+                            <label for="email" className="form-label">Email</label>
+                            <input type="text" className="form-control" id="email" onInput={(e) => setEmail(e.target.value)} />
                         </div>
                         <div class="mb-3">
-                            <label for="telefono" class="form-label">Teléfono</label>
-                            <input type="text" class="form-control" id="telefono" onInput={(e) => setTelefono(e.target.value)} />
+                            <label for="telefono" className="form-label">Teléfono</label>
+                            <input type="text" className="form-control" id="telefono" onInput={(e) => setTelefono(e.target.value)} />
                         </div>
-                        <button type="button" class="btn btn-success" onClick={() => {sendOrder()}}>Generar Orden</button>
+                        <button type="button" className="btn btn-success" onClick={() => {sendOrder()}}>Generar Orden</button>
                 </div>
                 <div className="col-md-4">
                     <table className="table">

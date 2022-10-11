@@ -15,7 +15,7 @@ const ItemDetail = ({item}) => {
   }
 
   return (
-    <div className='container-sm contenedor text-center ' >
+    <div className='container contenedor text-center' >
       <div className='row'>
         <div className='col'>
           <img src={item.imagen} alt={item.loteo} className='img-fluid img' />

@@ -13,7 +13,7 @@ import Checkout from './componentes/Checkout/Checkout';
 
 function App() {
   return (
-   <div className=' fondo-marron fuente'>
+   <div className='fondo-marron fuente'>
    <Provider>
       <Header/>
         <Routes>

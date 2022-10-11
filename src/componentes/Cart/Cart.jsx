@@ -19,6 +19,7 @@ const Cart = () => {
 
   return (
     <div className='container-fluid contPadre '>
+      <div className='marco'>
       {cart.map((producto) =>(
         <div key={producto.id} className="m-5 d-flex row text-center">
           <div className='col-2'>
@@ -30,29 +31,25 @@ const Cart = () => {
             <p>{producto.descripcion}</p>
           </div>
           <div className='col-3'>
-            <h3>Cantidad {producto.cantidad}</h3>
+            <h3>Cantidad: {producto.cantidad}</h3>
           </div>
           <div className='col-2'>
-            <h2>$ {producto.precio}</h2>
+            <h4>$ {producto.precio}</h4>
           </div>
           <div className='col-2'>
             <button onClick={()=>clearOne(producto.id)} className='btnCart'>Eliminar</button>
           </div>
         </div>
       ))}
-        <h4>TOTAL  ${montoTotal()}.-</h4>
+        <h3 className='montoTotal'>TOTAL  ${montoTotal()}.-</h3>
+        <div className='EliminarDiv'>
+        <button onClick={ clear } className='btnCart2'>Eliminar Todo</button>
+        </div>
         <hr className='hrt'/>
-        <div className=' container d-flex row m-5'>
-          <div className='col-3'>
+          <div className='col-3 finalCompra'>
             <Link to={'/Checkout'} title="Finalizar Compra">
               <button className='btn btnCart'>Finalizar Compra</button>
             </Link>
-          </div>
-          <div>
-            <button onClick={ clear } className='btnCart'>Eliminar Todo</button>
-          </div>
-          <div className='col-3'>
-            
           </div>
         </div>
       </div>

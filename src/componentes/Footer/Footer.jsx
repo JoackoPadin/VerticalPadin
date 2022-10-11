@@ -7,9 +7,8 @@ import Whatsapp from '../Imagenes/whatsapp.png';
 
 const Footer = () => {
   return (
-    <div className='container footer'>
+    <div className='container-fluid footer'>
       <div>
-        <hr></hr>
         <h5>© 2022 Copyrigh JPS-DEVS</h5>
       </div>
       <div className='container text-end'>

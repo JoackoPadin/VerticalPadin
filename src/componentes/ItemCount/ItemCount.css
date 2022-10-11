@@ -1,12 +1,13 @@
 .botones {
-    background-color: #2870ae; 
+    background-color: #4c4c4c; 
+    
 }
 .contenedor {
     padding: 0px;
     margin: 0px;
 }
 .botonAgregaLote {
-    background-color: #043a69;
+    background-color: #4c4c4c;
     margin-top: 10px;
     font-size: 1.2rem;
     border-radius: 50px;
@@ -14,5 +15,19 @@
     box-shadow: 5px 5px rgba(0,0,0,0.5);
     color: white;
     border-color: white;
+}
+.imputGroup{
+    background-color: #4c4c4c;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    box-shadow: 5px 5px rgba(0,0,0,0.5);
+    color: white;
+    border-color: white;
+}
+.container{
+    padding: 0%;
+    margin: 0%;
 }
 
