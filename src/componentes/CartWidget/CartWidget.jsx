@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import { cartContext } from '../Contexto/Context';
 import "./CartWidget.css";  
 import Cart from '../Imagenes/shopping-cart.png';
-import Trash from '../Imagenes/trash.png';
+
 
 
 const CartWidget = () => {
-    const {cartTotal, clear} = useContext(cartContext);
+    const {cartTotal} = useContext(cartContext);
 
     return (
         <div className="container icono-carrito justify-content-end">
