@@ -33,7 +33,7 @@ const ItemCount = ({ initial, stock, onAdd}) => {
         <div className="container py-5">
             <div className="row d-flex justify-content-center">
                 <div className="col-md-3 ">
-                    <div className="input-group imputGroup ">
+                    <div className="input-group imputGroup">
                         <input type="button" className="btn btn-secondary botones" value="-" onClick={()=>
                             {decrementarCantidad(counter - 1)}} /> 
                         <input type="text" className="form-control" value={counter} onChange={()=>{}} />

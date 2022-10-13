@@ -1,9 +1,12 @@
 import React from 'react'
+import "./loading.css";
 
 const Loading = () => {
   return (
-    <div>
-      <h3>Cargando...</h3>
+    <div className='center load'>
+      <div className='ring'>
+        <span>Cargando...</span>
+      </div>
     </div>
   )
 }
